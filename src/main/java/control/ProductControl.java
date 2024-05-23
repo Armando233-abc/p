@@ -47,6 +47,7 @@ public class ProductControl extends HttpServlet {
 				request.setAttribute("prodottoDettaglio", prodotto);
 			} catch (SQLException e) {
 				e.printStackTrace();
+				// è qui l'errore ? bho, dovrò controllare
 			}
 			finally {
 				RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/productDetail.jsp");
